@@ -8,3 +8,5 @@
 	Ja sam koristio ugrađeni alat: https://www.phpmyadmin.net/
 	
 4. Ako se symfony aplikacija planira objaviti na live internet samo se prate službene upute za deployment: https://symfony.com/doc/current/deployment.html#how-to-deploy-a-symfony-application
+
+5. Aplikacija se pokreće u browseru putem linka: https://localhost/symfony_crud/public/index.php/ (preduvjet je upaljeni lokalni apache/mysql server)
