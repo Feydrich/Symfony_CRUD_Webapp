@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<h1>New entry:</h1><br>
+	<div class="dataEntry"></div>
+	<div class="dataEntry">
+		{{form(nekretnina_form)}}
+			<br>
+			<a href={{ redirect }}>Home Page</a>
+		</div>
+		<div class="dataEntry"></div>
+	{% endblock %}

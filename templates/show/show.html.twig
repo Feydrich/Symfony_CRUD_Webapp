@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ShowController!
+{% endblock %}
+
+{% block body %}
+	<h1>Real estate:</h1><br>
+	<table>
+
+		<th>Id</th>
+		<th>Naslov</th>
+		<th>Cijena</th>
+		<th>Kategorija</th>
+		<th colspan="2">Admin Tools</th>
+	</th>
+	{% for unit in queries %}
+		<tr>
+			<td>{{ unit.id|e }}</td>
+			<td>{{ unit.naslov|e }}</td>
+			<td>{{ unit.cijena|e }}</td>
+			<td>{{ unit.kategorija|e }}</td>
+			<td>
+				<a href={{ path('update', {'id': unit.id} ) }}>Edit</a>
+			</td>
+			<td>
+				<a href={{ path('delete',{'id': unit.id} ) }}>Delete</a>
+			</td>
+		</tr>
+	{% endfor %}
+</table>
+<br><a href={{ redirect }}>Home Page</a><br><br>{% endblock %}

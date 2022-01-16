@@ -1,0 +1,32 @@
+* {
+  margin: 0 auto;
+  font-family: helvetica;
+  background-color: #1e1e1e;
+  color: #e6e6e6;
+}
+
+.base {
+  animation: float 2s;
+  height: 95vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.dataEntry {
+  float: left;
+  width: calc(100% / 3);
+  height: 60vh;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translatey(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
